@@ -1,0 +1,15 @@
+<?php
+
+use Magento\Framework\View\Element\Template;
+use Laminas\Escaper\Escaper;
+
+/** @var Escaper $escaper */
+/** @var Template $block */
+
+$text = 'Choose delivery date: ';
+?>
+
+<label>
+    <p><?= $escaper->escapeHtml($text) ?></p>
+    <input type="date">
+</label>
